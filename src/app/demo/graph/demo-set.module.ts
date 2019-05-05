@@ -45,6 +45,8 @@ import {GaugeGraphComponent} from "./gauge/demo.component";
 import {GaugeGraphModule} from "./gauge/demo.module";
 import {BarGraphComponent} from "app/demo/graph/bar/demo.component";
 import {BarGraphModule} from "./bar/demo.module";
+import {GlGraphComponent} from "./gl/demo.component";
+import {GlGraphModule} from "./gl/demo.module";
 
 export const routerConfig = [
     {
@@ -106,6 +108,9 @@ export const routerConfig = [
     },
     {
         path: 'bar', component: BarGraphComponent
+    },
+    {
+        path: 'gl', component: GlGraphComponent
     }
 ];
 
@@ -133,6 +138,7 @@ export const routerConfig = [
         FunnelPlotGraphModule,
         GaugeGraphModule,
         BarGraphModule,
+        GlGraphModule
     ]
 })
 export class GraphDemoModule {

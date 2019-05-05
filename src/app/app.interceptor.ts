@@ -299,6 +299,7 @@ class MockData {
         this.dataSet['big-table-data'] = this.dataSet['big-table-data'] || this.createBigTableData();
         this.dataSet['map/shanghai'] = require('echarts/map/json/province/shanghai.json');
         this.dataSet['map/china'] = require('echarts/map/json/china.json');
+        this.dataSet['map/world'] = require('echarts/map/json/world.json');
     }
 
     static createBigTableData(): RawTableData {
